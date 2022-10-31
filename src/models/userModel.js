@@ -2,6 +2,9 @@ const mongoose = require("mongoose")
 
 
 const userSchema = new mongoose.Schema({
+    cover:{
+        type: String
+    },
     title: {
         type: String,
         required: true,

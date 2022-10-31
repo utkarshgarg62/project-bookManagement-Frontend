@@ -13,7 +13,10 @@ router.post('/login', userController.userLogin)
 router.get('/getUser', userController.getUser)
 
 //---------------- BOOK API'S ----------------------
-router.post("/books", middleware.authenticate, middleware.authorization, bookController.createBook)
+router.post("/books", 
+// middleware.authenticate, 
+// middleware.authorization, 
+bookController.createBook)
 router.get("/books",
 //  middleware.authenticate, 
  bookController.getBooksData)
