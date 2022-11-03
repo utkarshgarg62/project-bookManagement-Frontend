@@ -142,7 +142,7 @@ const getBooksData = async function (req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   try {
     let data = req.query;
-    let { userId, category, subcategory } = data;
+    let { _id, userId, category, subcategory } = data;
     let bookData = { isDeleted: false };
 
     if (Object.keys(data).length == 0) {
@@ -166,7 +166,9 @@ const getBooksData = async function (req, res) {
           .send({ status: false, message: "Invalid userId in params" });
       }
     }
-
+    if (_id) {
+      bookData._id = _id;
+    }
     if (userId) {
       bookData.userId = userId;
     }
@@ -197,6 +199,7 @@ const getBooksData = async function (req, res) {
 //===============================================[Get Book API By BookId]====================================================================
 
 const getBooksDataById = async function (req, res) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
   try {
     let BookId = req.params.bookId;
 
@@ -225,7 +228,7 @@ const getBooksDataById = async function (req, res) {
 
     return res
       .status(200)
-      .send({ status: true, message: "Books list", data: reviewObj });
+      .send({ status: true, message: "Book", data: reviewObj });
   } catch (err) {
     res.status(500).send({ message: err.message });
   }

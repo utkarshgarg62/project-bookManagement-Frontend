@@ -20,7 +20,9 @@ bookController.createBook)
 router.get("/books",
 //  middleware.authenticate, 
  bookController.getBooksData)
-router.get("/books/:bookId", middleware.authenticate, bookController.getBooksDataById)
+router.get("/books/:bookId", 
+// middleware.authenticate, 
+bookController.getBooksDataById)
 router.put("/books/:bookId", middleware.authenticate, middleware.authorization, bookController.updatedBook)
 router.delete("/books/:bookId", middleware.authenticate, middleware.authorization, bookController.deleteBookId)
 
