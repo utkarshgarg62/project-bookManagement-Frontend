@@ -213,7 +213,8 @@ const getBooksDataById = async function (req, res) {
 
     let findBook = await bookModel
       .findOne({ _id: BookId, isDeleted: false })
-      .select({ ISBN: 0, __v: 0 });
+      .populate("userId");
+      // .select({ ISBN: 0, __v: 0 });
     if (!findBook)
       return res.status(404).send({ status: false, message: "No Book found" });
 
