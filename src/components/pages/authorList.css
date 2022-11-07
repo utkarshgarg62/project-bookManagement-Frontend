@@ -1,0 +1,75 @@
+#list-th:target .book {
+  height: 100px;
+  width: 250px;
+  padding: 10px;
+  margin: 25px auto 25px auto;
+}
+
+#list-th:target .cover {
+  width: 246px;
+}
+
+#list-th:target img {
+  opacity: 0.1;
+}
+
+#list-th:target p {
+  margin-top: -62px;
+  margin-left: 20px;
+}
+.cover {
+  border: 1px solid gray;
+  height: 80%;
+  overflow: hidden;
+}
+
+.cover img {
+  width: 100%;
+}
+
+.books {
+  display: inline-block;
+  width: 250px;
+  height: 380px;
+  box-shadow: 0 0 20px #aaa;
+  margin: 25px;
+  padding: 10px 10px 0px 10px;
+  vertical-align: top;
+  transition: height 1s;
+}
+.book p {
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.book .author {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+@media (max-width: 941px) {
+  .container {
+    max-width: 700px;
+  }
+  .book {
+    margin: 49px;
+  }
+}
+@media (max-width: 730px) {
+  .book {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+#large-th:target .book {
+  height: 390px;
+}
+
+.description .title .author {
+  font-size: 15px;
+}
+.description .title .author-add {
+  font-size: 15px;
+}

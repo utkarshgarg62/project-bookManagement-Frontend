@@ -1,0 +1,18 @@
+.error img {
+  width: 40%;
+  height: 40%;
+}
+.center {
+  display: block;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
