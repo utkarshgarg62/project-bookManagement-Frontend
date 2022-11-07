@@ -120,7 +120,6 @@ module.exports.getUser = getUser;
 //================================================[User Login Api]=======================================================================
 
 const userLogin = async function (req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
   try {
     userName = req.body.email;
     if (!userName)
