@@ -16,11 +16,11 @@ const createUser = async function (req, res) {
   try {
     const data = req.body;
     let { title, name, phone, email, password } = data;
-    // if (Object.keys(data).length < 1) {
-    //   return res
-    //     .status(400)
-    //     .send({ status: false, message: "Data is required to create a user" });
-    // }
+    if (Object.keys(data).length < 1) {
+      return res
+        .status(400)
+        .send({ status: false, message: "Data is required to create a user" });
+    }
 
     //------------ Validation title
 
@@ -127,20 +127,20 @@ const userLogin = async function (req, res) {
       return res
         .status(400)
         .send({ status: false, message: "Email is required" });
-    // if (!isValidEmail(userName))
-    //   return res
-    //     .status(400)
-    //     .send({ status: false, message: "Email is required" });
+    if (!isValidEmail(userName))
+      return res
+        .status(400)
+        .send({ status: false, message: "Email is required" });
 
     userPassword = req.body.password;
     if (!userPassword)
       return res
         .status(400)
         .send({ status: false, message: "Password is required" });
-    // if (!isValidPassword(userPassword))
-    //   return res
-    //     .status(400)
-    //     .send({ status: false, message: "Email is required" });
+    if (!isValidPassword(userPassword))
+      return res
+        .status(400)
+        .send({ status: false, message: "Email is required" });
 
     let userDetails = await userModel.findOne({
       email: userName,
