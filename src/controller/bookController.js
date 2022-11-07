@@ -40,7 +40,6 @@ let uploadFile = async (file) => {
 //================================================[Create Book Api]=======================================================================
 
 const createBook = async function (req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
   try {
     let data = req.body;
     let { title, excerpt, userId, ISBN, category, subcategory, releasedAt } =
@@ -139,7 +138,6 @@ const createBook = async function (req, res) {
 //====================================================[Get Book API]=====================================================================
 
 const getBooksData = async function (req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
   try {
     let data = req.query;
     let { _id, userId, category, subcategory } = data;
@@ -199,7 +197,6 @@ const getBooksData = async function (req, res) {
 //===============================================[Get Book API By BookId]====================================================================
 
 const getBooksDataById = async function (req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
   try {
     let BookId = req.params.bookId;
 

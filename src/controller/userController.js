@@ -12,7 +12,6 @@ const {
 //================================================[Create User Api]=======================================================================
 
 const createUser = async function (req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
   try {
     const data = req.body;
     let { title, name, phone, email, password } = data;
