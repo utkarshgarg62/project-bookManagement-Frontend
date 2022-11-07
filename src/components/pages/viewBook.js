@@ -7,7 +7,7 @@ const ViewBook = () => {
   const [booksList, setBooksList] = useState([]);
 
   useEffect(() => {
-    fetch(`https://book-management-backend.herokuapp.com/books/${id}`)
+    fetch(`https://bookmanagement-back.herokuapp.com/books/${id}`)
       .then((response) => response.json())
       .then((output) => {
         setBooksList(output.data);

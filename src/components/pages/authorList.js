@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import "./authorList.css";
 import axios from "axios";
 
-const authorApi = "https://book-management-backend.herokuapp.com/getUser";
+
+const authorApi = "https://bookmanagement-back.herokuapp.com/getUser";
 
 const AuthorList = () => {
   const [authorList, setAuthorList] = useState();
