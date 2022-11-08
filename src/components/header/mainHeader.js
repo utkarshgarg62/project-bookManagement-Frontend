@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
-import Header from "./header";
+import ResHeader from "./resHeader";
 
 const HomePage = () => {
   return (
     <>
-      <Header />
+      <ResHeader />
       <Outlet />
     </>
   );

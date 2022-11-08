@@ -4,7 +4,7 @@
   justify-content: space-around;
   position: absolute;
   /* left: 50%; */
-  top: 50px;
+  top: 101px;
   /* transform: translate(-50%, -50%); */
   width: 100%;
 }
@@ -12,7 +12,7 @@
 .header-img {
   width: 550px;
   height: 100%;
-  margin: 100px;
+  /* margin: 100px; */
 }
 .header-img img {
   width: 100%;
@@ -25,7 +25,7 @@
   margin: 20px;
 }
 .header-text h1 {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 3.5rem;
   line-height: 55px;
   color: rgb(43, 40, 40);
@@ -42,22 +42,21 @@
   text-decoration: underline;
 }
 
-
-.header-btn{
-    width: 120px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(211, 46, 46);
-    color: aliceblue;
-    box-shadow: 2px 2px 20px rgb(211, 126, 126);
-    text-transform: uppercase;
-    transition: 0.3s ease-in-out;
-    margin-top: 20px;
-    border-radius: 3px;
-    text-decoration: none;
+.header-btn {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(211, 46, 46);
+  color: aliceblue;
+  box-shadow: 2px 2px 20px rgb(211, 126, 126);
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  margin-top: 20px;
+  border-radius: 3px;
+  text-decoration: none;
 }
-.header-btn:hover{
-    background-color: rgb(85, 14, 14);
+.header-btn:hover {
+  background-color: rgb(85, 14, 14);
 }
