@@ -32,14 +32,15 @@ const AuthorList = () => {
                   {authors.title}. {authors.name}
                   <br></br>
                   <span className="author">{authors.email}</span>
-                  <span>
-                    <button>{authors._id}</button>
-                  </span>
-                  {/* <br></br>
+
+                  <br></br>
                   <span className="author-add">
                     {authors.address.street}, {authors.address.city},{" "}
                     {authors.address.pincode}
-                  </span> */}
+                  </span>
+                  <span>
+                    <button>{authors._id}</button>
+                  </span>
                 </p>
               </div>
             </div>
