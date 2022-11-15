@@ -3,7 +3,7 @@ import "./booksList.css";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
 
-const booksApi = "https://bookmanagement-back.herokuapp.com/books";
+const booksApi = "https://bm-backend-ug.herokuapp.com/books";
 
 const BooksList = () => {
   const [booksList, setBooksList] = useState();

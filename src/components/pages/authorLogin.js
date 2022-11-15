@@ -13,7 +13,7 @@ const AuthorLogin = () => {
   const handle = async (e) => {
     e.preventDefault()
     try {
-      const resp = await axios.post("https://bookmanagement-back.herokuapp.com/login", {
+      const resp = await axios.post("https://bm-backend-ug.herokuapp.com/login", {
         email: email,
         password: password
       })
