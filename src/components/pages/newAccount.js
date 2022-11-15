@@ -21,7 +21,7 @@ const AuthorLogin = () => {
   const handle = async (e) => {
     e.preventDefault()
     try {
-      const resp = await axios.post("https://bm-backend-ug.herokuapp.com/register", {
+      const resp = await axios.post("https://bm-backend.up.railway.app/register", {
         title: title,
         name: name,
         phone: phone,

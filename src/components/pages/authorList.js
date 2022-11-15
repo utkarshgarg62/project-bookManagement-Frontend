@@ -3,7 +3,7 @@ import "./authorList.css";
 import axios from "axios";
 
 
-const authorApi = "https://bm-backend-ug.herokuapp.com/getUser";
+const authorApi = "https://bm-backend.up.railway.app/getUser";
 
 const AuthorList = () => {
   const [authorList, setAuthorList] = useState();

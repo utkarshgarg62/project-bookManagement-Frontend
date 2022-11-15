@@ -7,7 +7,7 @@ const ViewBook = () => {
   const [booksList, setBooksList] = useState([]);
 
   useEffect(() => {
-    fetch(`https://bm-backend-ug.herokuapp.com/books/${id}`)
+    fetch(`https://bm-backend.up.railway.app/books/${id}`)
       .then((response) => response.json())
       .then((output) => {
         setBooksList(output.data);
